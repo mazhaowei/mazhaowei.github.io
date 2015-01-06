@@ -4,7 +4,7 @@
 html, body {
 	 background: #b8d7e9;
 	 background: radial-gradient(circle, #f9fcff 20%, #e2eff7 50%, #b1d4e7 100%);
-	font-family: '\5fae\8f6f\96c5\9ed1', arial, sans-serif;
+	 font-family: '\5fae\8f6f\96c5\9ed1', arial, sans-serif;
 }
 .m-nav {
 	 width: 800px;

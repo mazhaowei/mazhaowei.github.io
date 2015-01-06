@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="p-index" lang="zh-cn">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>欢迎访问 mazhaowei.com（匆匆那年）</title>
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico" >
+<!--[if lte IE 8]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../stylesheets/reset.css" >
+<style>
+#ourstory {
+	  position: fixed;
+		bottom: 0;
+		  left: 0;
+		height: 100%;
+		 width: 100%;
+	background: url(../images/Ourstory/ourStory_bg.jpg) center center no-repeat;
+}
+#LetBtn {
+	 display: block;
+	position: absolute;
+	     top: 250px;
+	    left: 690px;
+	   width: 125px;
+	  height: 33px;
+  background: url(../images/Ourstory/LetBtn.png) 0 0 no-repeat;
+}
+#LetBtn:hover {
+	background: url(../images/Ourstory/LetBtn_Hov.png) 0 0 no-repeat;
+}
+.datetimeshow {
+	position: absolute;
+	 z-index:10;
+         top: 15px;
+	   right: 35px;
+	   width: 220px;
+
+}
+</style>
+</head>
+
+<body >
+<div  id="ourstory" >
+  <div class="datetimeshow" >
+    <p style="width:220px; height:100px; "><script src="../javascripts/clockis/clock.js" ></script></p>
+    <p style="width:220px;font-weight:bold; font-size:16px;letter-spacing:1px;font-family: Arial, Helvetica, sans-serif;">
+	 <script >today = new Date();
+                    function initArray() {
+                        this.length = initArray.arguments.length
+                        for (var i = 0; i < this.length; i++)
+                            this[i + 1] = initArray.arguments[i]
+                    }
+                    var d = new initArray('星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
+                    var year = (today.getYear() > 1000) ? today.getYear() : today.getYear() + 1900;
+    </script> 
+ <span style="color:#0282EB;margin-left:5px;"><script >document.write(year, '年', today.getMonth() + 1, '月', today.getDate(), '日 '); </script></span>
+ <span style="color:#FF0004; margin-left:10px;"><script >document.write(d[today.getDay() + 1]); </script></span>
+ </p>
+  </div>
+  <div style="position:fixed; bottom:15px; text-align:center; width:100%;"> 
+    <img src="../images/Ourstory/Rili.png"/> 
+    <a href="dome2.html" id="LetBtn"></a> </div>
+</div>
+
+</body>
+</html>

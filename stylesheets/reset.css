@@ -63,7 +63,8 @@ ins, s, u, del {
 }
 a {
 	color: #0069ca;
-	text-decoration: none
+	text-decoration: none;
+	outline:none;
 }
 a:hover {
 	color: #f60
