@@ -67,6 +67,7 @@ a {
 	outline:none;
 }
 a:hover {
+	cursor:pointer;
 	color: #f60
 }
 .g-clear, .g-mod {

@@ -20,9 +20,6 @@
 }
 #LetBtn {
 	 display: block;
-	position: absolute;
-	     top: 250px;
-	    left: 690px;
 	   width: 125px;
 	  height: 33px;
   background: url(../images/Ourstory/LetBtn.png) 0 0 no-repeat;
@@ -38,6 +35,130 @@
 	   width: 220px;
 
 }
+.Denglu{ 
+ 	position:fixed;
+		 z-index:10;
+	bottom:107px;
+	left:40%;
+   width:432px;
+   height:360px; 
+   background:url(../images/Ourstory/figure_bg.png) 0 0 no-repeat;
+  
+   }
+ .form_box {
+	 position:absolute;
+	 top:40px; 
+	 right:0px;
+	 width: 220px;
+	height: 272px;
+	  background-color: #f4f3f5;
+	-webkit-box-shadow: -5px 5px 5px rgba(12,2,3,.67);
+	   -moz-box-shadow: -5px 5px 5px rgba(12,2,3,.67);
+	        box-shadow: -5px 5px 5px rgba(12,2,3,.67);
+		        border: solid 1px #cfc8c8;
+	background-image: -webkit-linear-gradient(bottom, #dadada, #faf9fa);
+	background-image: -moz-linear-gradient(bottom, #dadada, #faf9fa);
+	background-image: -o-linear-gradient(bottom, #dadada, #faf9fa);
+	background-image: -ms-linear-gradient(bottom, #dadada, #faf9fa);
+	background-image: linear-gradient(to top, #dadada, #faf9fa);
+	   }
+.denglu_title{
+	width:100px; 
+	height:30px;
+	margin:0 auto;
+	font-family: "DFPShaoNvW5-GB";
+	font-size:33px;
+	color: #6f5e62;
+    text-shadow: -1px -1px 2px #9b9191;
+	text-align:center;
+    margin-top:22px;
+
+	}
+.text_put{
+	display:block;
+     margin:0 auto;
+	width: 160px;
+	height: 34px;
+	padding-left:28px;
+	-webkit-border-radius: 6px/7px;
+	-moz-border-radius: 6px/7px;
+	border-radius: 6px/7px;
+	color:#726570;
+	font-size:12px;
+	font-style: italic;
+	letter-spacing:1px;
+	background-color: rgba(0,104,183,0.03);
+	background-position:6px center;
+	background-repeat:no-repeat;
+	-webkit-box-shadow: inset 0 1px 4px rgba(18,5,9,.55);
+	-moz-box-shadow: inset 0 1px 4px rgba(18,5,9,.55);
+	box-shadow: inset 0 1px 4px rgba(18,5,9,.55);
+	border: solid 1px rgba(52,43,46,.6);
+	}	
+.user_put  {
+		margin-top:30px;
+	background-image:url(../images/Ourstory/user_icon.png);
+	} 
+.key_put{
+		margin-top:10px;
+	background-image:url(../images/Ourstory/key_icon.png);
+	}	
+	   
+.sbt_put{
+	display:block;
+    margin:0 auto;
+	width: 120px;
+	height: 23px;
+	padding-top:4px;
+	text-align:center;
+   margin-top:18px;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	font-weight:bold;
+	color: #fffdfd;
+	text-shadow: 0 -1px 2px #412404;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: rgba(0,104,183,0);
+	-webkit-box-shadow: inset 0 0 2px rgba(238,239,195,.75);
+	-moz-box-shadow: inset 0 0 2px rgba(238,239,195,.75);
+	box-shadow: inset 0 0 2px rgba(238,239,195,.75);
+	border: solid 1px rgba(110,69,30,.53);
+	background-image: -webkit-linear-gradient(bottom, #f27a06 89%, #fc0);
+	background-image: -moz-linear-gradient(bottom, #f27a06 89%, #fc0);
+	background-image: -o-linear-gradient(bottom, #f27a06 89%, #fc0);
+	background-image: -ms-linear-gradient(bottom, #f27a06 89%, #fc0);
+	background-image: linear-gradient(to top, #f27a06 89%, #fc0);
+	}	   
+.sbt_put:hover{
+		color: #8c5242;
+		text-shadow:none;
+	-webkit-box-shadow: inset 0 2px 6px rgba(18,5,9,.55), inset 0 0 2px rgba(238,239,195,.75);
+	-moz-box-shadow: inset 0 2px 6px rgba(18,5,9,.55), inset 0 0 2px rgba(238,239,195,.75);
+	box-shadow: inset 0 2px 6px rgba(18,5,9,.55), inset 0 0 2px rgba(238,239,195,.75);
+	}	   
+.Denglu_warntext{
+	margin:0 auto;
+	width: 200px;
+    font-size:12px;
+	color:#7e7779;
+	
+}
+.Denglu_warntext span{
+	margin-top:3px;
+	font-size:14px; 
+	font-weight:bold; 
+	color:#FF1700;
+	 margin-right:2px;
+	 }
+   .Rili{
+	position:fixed;
+	 z-index:11;
+	bottom:15px; 
+	text-align:center;
+	width:100%;   
+   }
 </style>
 </head>
 
@@ -45,7 +166,7 @@
 <div  id="ourstory" >
   <div class="datetimeshow" >
     <p style="width:220px; height:100px; "><script src="../javascripts/clockis/clock.js" ></script></p>
-    <p style="width:220px;font-weight:bold; font-size:16px;letter-spacing:1px;font-family: Arial, Helvetica, sans-serif;">
+    <p style="width:220px;font-weight:bold; font-size:16px;letter-spacing:2px;font-family: 'Microsoft YaHei'; ">
 	 <script >today = new Date();
                     function initArray() {
                         this.length = initArray.arguments.length
@@ -56,12 +177,26 @@
                     var year = (today.getYear() > 1000) ? today.getYear() : today.getYear() + 1900;
     </script> 
  <span style="color:#0282EB;margin-left:5px;"><script >document.write(year, '年', today.getMonth() + 1, '月', today.getDate(), '日 '); </script></span>
- <span style="color:#FF0004; margin-left:10px;"><script >document.write(d[today.getDay() + 1]); </script></span>
+ <span style="color:#d51501; margin-left:10px;"><script >document.write(d[today.getDay() + 1]); </script></span>
  </p>
   </div>
-  <div style="position:fixed; bottom:15px; text-align:center; width:100%;"> 
-    <img src="../images/Ourstory/Rili.png"/> 
-    <a href="dome2.html" id="LetBtn"></a> </div>
+  
+  <div class="Denglu">
+    <div class="form_box">
+    <img style="position:absolute; top:-24px; left:88px;" src="../images/Ourstory/hand.png"  width="57" height="44" />
+    <form>
+    <h3 class="denglu_title">登&nbsp;陆</h3>
+    <input type="text" class="user_put text_put" value="your name" />
+    <p class="Denglu_warntext"><span style="">*</span>输入你的名字 张三如'ZhSan'</p>
+    <input type="text" class="key_put text_put" value="password"  />
+    <p class="Denglu_warntext"><span>*</span>名字全拼+生日 如'ZhangSan1001'</p>
+    <a href="dome2.html" class="sbt_put" />let’s go </a>
+    </form><!--/.form_box end-->
+    </div>
+  </div><!--/.Rili end-->
+  <div class="Rili" > 
+  <img src="../images/Ourstory/Rili.png" width="1229" height="129" />
+  </div><!--/.Rili end-->
 </div>
 
 </body>
