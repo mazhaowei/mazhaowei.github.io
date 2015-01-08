@@ -1,7 +1,7 @@
 /******************************************************************************
 	ݒ
 ******************************************************************************/
-var swfUrl = "../javascripts/clockis/clock.swf";
+var swfUrl = "javascripts/clockis/clock.swf";
 
 var swfTitle = "honehoneclock";
 
