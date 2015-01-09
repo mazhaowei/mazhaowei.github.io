@@ -98,8 +98,8 @@
 
 
 	//账户密码数组
-var usersName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng",];
-var usersPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134",];
+var usersName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng","WJing","WJichun",];
+var usersPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];
 
 	  //数组遍历验证跳转 
        function checktsUser(){ 
