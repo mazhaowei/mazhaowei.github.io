@@ -184,7 +184,7 @@ function checkUserPwd() {
     for (var i = 0; i < usersName.length; i++) {
 
         if ($("#usr").val() == usersName[i] && $("#psd").val() == usersPwd[i]) {
-            window.location.href = "OurStory/JQphoto/JQPhoto.html";
+            window.location.href = "OurStory/ImageWall/ImageWall.html";
             return;
         }
     }
