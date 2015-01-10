@@ -4,9 +4,7 @@
 		   var reg= /^[A-Za-z]+$/;
 	       var reg1= /^[A-Z]+$/;   
 		   var reg2=/^[a-z]+$/;	
-// 非空判断	
 
-	   
 	   
 	// onfocus 获得焦点时 user
 	function USCKCL(obj){
@@ -98,8 +96,12 @@
 
 
 	//账户密码数组
+var usserPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];	
 var usersName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng","WJing","WJichun",];
 var usersPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];
+var userName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng","WJing","WJichun",];
+var userPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];
+
 
 	  //数组遍历验证跳转 
        function checktsUser(){ 
@@ -173,7 +175,7 @@ var usersPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825",
 	
 function checkUserPwd() {
     if (checktsUserkong() && checktsPwdkong()) {
-        alert("您可能没有帐密权限,如需管理员联系");
+        alert("您可能没有帐密权限,请与管理员联系");
     }
     if (checktsUserkong()) {
         checktsPwdkong();
@@ -188,7 +190,7 @@ function checkUserPwd() {
             return;
         }
     }
-    alert("你输入的不正确或没有您输入的的帐密,请于管理员联系");
+    alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
 }
 
 
