@@ -89,7 +89,7 @@
 		         $("#tsPwd").html("密码小写字母开头,请重新输入");
 		  		 $("#tsPwd").removeClass().addClass("onClass3");
 		                            }else{
-						   $("#tsPwd").html("姓名全拼+4位数，如'zhangsan1001'");
+						   $("#tsPwd").html("姓名全拼+4位数，如zhangsan1001");
 						   $("#tsPwd").removeClass().addClass("onClass1");
 							      }
 			   }			
@@ -173,6 +173,47 @@ var userPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","
 	                   }
 	
 	
+
+function checkUerPwd() {
+    if (checktsUserkong() && checktsPwdkong()) {
+        alert("您可能没有帐密权限,请与管理员联系");
+    }
+    if (checktsUserkong()) {
+        checktsPwdkong();
+        return;
+    } else if (checktsPwdkong()) {
+        return;
+    }
+    for (var i = 0; i < usersName.length; i++) {
+
+        if ($("#usr").val() == usersName[i] && $("#psd").val() == usersPwd[i]) {
+            window.location.href = "OurStory/ImageWall/ImageWa2l.html";
+            return;
+        }
+    }
+    alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
+}
+
+function chekUserPwd() {
+    if (checktsUserkong() && checktsPwdkong()) {
+        alert("您可能没有帐密权限,请与管理员联系");
+    }
+    if (checktsUserkong()) {
+        checktsPwdkong();
+        return;
+    } else if (checktsPwdkong()) {
+        return;
+    }
+    for (var i = 0; i < usersName.length; i++) {
+
+        if ($("#usr").val() == usersName[i] && $("#psd").val() == usersPwd[i]) {
+            window.location.href = "OurStory/ImageWall/ImageWa11.html";
+            return;
+        }
+    }
+    alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
+}
+
 function checkUserPwd() {
     if (checktsUserkong() && checktsPwdkong()) {
         alert("您可能没有帐密权限,请与管理员联系");
@@ -192,7 +233,5 @@ function checkUserPwd() {
     }
     alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
 }
-
-
 						
 				

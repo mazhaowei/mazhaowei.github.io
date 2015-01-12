@@ -242,7 +242,18 @@ html, body {
 	}	
 	
 	
-	
+.kefu_admin {
+	position: absolute;
+	z-index:999;
+	width: 78px;
+	height: 103px;
+}
+.kefu_admin a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+}	
 	
 	
 	
