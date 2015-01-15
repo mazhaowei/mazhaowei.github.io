@@ -151,8 +151,6 @@ html, body {
      filter:alpha(opacity=58); 
 }
 
-
-
 .m-nav .github .title {
 	padding-top: 70px;
       font-size: 20px;
@@ -246,7 +244,7 @@ html, body {
 	position: absolute;
 	z-index:999;
 	width: 78px;
-	height: 103px;
+	height: 100px;
 }
 .kefu_admin a {
 	display: inline-block;
