@@ -96,11 +96,10 @@
 
 
 	//账户密码数组
-var usserPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];	
+
 var usersName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng","WJing","WJichun",];
+
 var usersPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];
-var userName=["MZhaowei","LChangcun","LYanmei","SJiamin","SFulong","LKaikai","ZhJunhan","FLulu","MBaoli","SQimei","LHan","LZhihai","ChJun","SCheng","WJing","WJichun",];
-var userPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","sunfulong0103","likaikai0104","zhoujunhan0105","fenglulu0143","mabaoli0109","sunqimei0112","lihan0114","liuzhihai0113","changjun0119","songcheng0134","wangjing0122","wangjichun0115",];
 
 
 	  //数组遍历验证跳转 
@@ -174,45 +173,7 @@ var userPwd=["mazhaowei0526","lichangcun0101","liuyanmei0102","songjiamin0825","
 	
 	
 
-function checkUerPwd() {
-    if (checktsUserkong() && checktsPwdkong()) {
-        alert("您可能没有帐密权限,请与管理员联系");
-    }
-    if (checktsUserkong()) {
-        checktsPwdkong();
-        return;
-    } else if (checktsPwdkong()) {
-        return;
-    }
-    for (var i = 0; i < usersName.length; i++) {
 
-        if ($("#usr").val() == usersName[i] && $("#psd").val() == usersPwd[i]) {
-            window.location.href = "OurStory/ImageWall/ImageWa2l.html";
-            return;
-        }
-    }
-    alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
-}
-
-function chekUserPwd() {
-    if (checktsUserkong() && checktsPwdkong()) {
-        alert("您可能没有帐密权限,请与管理员联系");
-    }
-    if (checktsUserkong()) {
-        checktsPwdkong();
-        return;
-    } else if (checktsPwdkong()) {
-        return;
-    }
-    for (var i = 0; i < usersName.length; i++) {
-
-        if ($("#usr").val() == usersName[i] && $("#psd").val() == usersPwd[i]) {
-            window.location.href = "OurStory/ImageWall/ImageWa11.html";
-            return;
-        }
-    }
-    alert("您输入的不正确或没有您输入的的帐密,请与管理员联系");
-}
 
 function checkUserPwd() {
     if (checktsUserkong() && checktsPwdkong()) {
