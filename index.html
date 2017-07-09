@@ -1,85 +1,339 @@
-<!DOCTYPE html>
-<html lang=en>
-<meta charset=UTF-8>
-<meta http-equiv=X-UA-Compatible content="IE=edge">
-<meta name=keywords content=>
-<meta name=description content=>
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel=bookmark href="/favicon.ico?v=cf816faff5f7d118d871cd8c12a91f16" type=image/x-icon>
-<title>魔幻Zone 魔幻空间</title>
-<link rel=stylesheet href="css/style.css">
-<style type="text/css">
-	.nav_box a{ cursor: pointer;}
-	.nav_box a:hover{ color: #ffdd00;}
-</style>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>j交房倒计时啦</title>
+    <link href="FlipTimer/css/style2.css" rel="stylesheet" type="text/css">
+    <script src="FlipTimer/js/jquery-2.1.4.min.js"></script>
+    <script src="FlipTimer/js/FlipTimer.js"></script>
+</head>
+
 <body>
-<div class=wrap id=wrap>
-  <div class=wrapper>
-    <div class=header>
-      <div class="head clearfix">
-        <div class=logo_box>
-          <h1 class=hidden>mohuan.zone</h1>
-          <a class=logo_link><img src="img/logo.png"></a></div>
-        <div class=nav_box id=nav_box>
-          <ul>
-            <li><a  style="letter-spacing: 2px;">HOME</a>
-            <li><a >魔幻法术</a>
-            <li><a >魔幻陀螺</a>    
-          </ul>
-          <span class=ic_line></span></div>
-      </div>
+
+<div class="ft_bg">
+<div class="ft_wrapper">
+
+<div class="ft_counter">
+    <div class="EightycloudsFlipTimer">
+        <h1 style="font-size: 36px; color: aliceblue;">当前时间     <span style="font-size: 26px;color: aliceblue;">
+            <span>今年是20</span>
+            <span class="Span_year" style="margin-left: -6px;"></span>
+            <span>年</span>
+        </span><button id="StoptimeBtn">停止时间</button><button style="margin-left: 10px;" id="StarttimeBtn">继续当前时间</button></h1>
+         
+      
+        <div style="clear: both; height: 20px;"></div>
+        <div class="block days">
+            <div class="block_left">
+                <div class="block_left_top">
+                    <div class="block_left_top_count date_one" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_left_bottom">
+                    <div class="block_left_bottom_count date_one" >0</div>
+                </div>
+                <div class="block_effect1 left"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 left"></div>
+                <div class="block_effect6 left"></div>
+            </div>
+            <div class="block_right">
+                <div class="block_right_top">
+                    <div class="block_right_top_count date_two" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_right_bottom">
+                    <div class="block_right_bottom_count date_two">0</div>
+                </div>
+                <div class="block_effect1"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 right"></div>
+                <div class="block_effect6 right"></div>
+            </div>
+            <div class="block_text">days</div>
+        </div>
+        <div class="block hours">
+            <div class="block_left">
+                <div class="block_left_top">
+                    <div class="block_left_top_count hours_one">0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_left_bottom">
+                    <div class="block_left_bottom_count hours_one" >0</div>
+                </div>
+                <div class="block_effect1 left"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 left"></div>
+                <div class="block_effect6 left"></div>
+            </div>
+            <div class="block_right">
+                <div class="block_right_top">
+                    <div class="block_right_top_count hours_two" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_right_bottom">
+                    <div class="block_right_bottom_count hours_two" >0</div>
+                </div>
+                <div class="block_effect1"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 right"></div>
+                <div class="block_effect6 right"></div>
+            </div>
+            <div class="block_text">hours</div>
+        </div>
+        <div class="block minutes">
+            <div class="block_left">
+                <div class="block_left_top">
+                    <div class="block_left_top_count minutes_one" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_left_bottom">
+                    <div class="block_left_bottom_count minutes_one" >0</div>
+                </div>
+                <div class="block_effect1 left"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 left"></div>
+                <div class="block_effect6 left"></div>
+            </div>
+            <div class="block_right">
+                <div class="block_right_top">
+                    <div class="block_right_top_count minutes_two" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_right_bottom">
+                    <div class="block_right_bottom_count minutes_two" >0</div>
+                </div>
+                <div class="block_effect1"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 right"></div>
+                <div class="block_effect6 right"></div>
+            </div>
+            <div class="block_text">minutes</div>
+        </div>
+        <div class="block seconds">
+            <div class="block_left">
+                <div class="block_left_top">
+                    <div class="block_left_top_count seconds_one" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_left_bottom">
+                    <div class="block_left_bottom_count seconds_one" >0</div>
+                </div>
+                <div class="block_effect1 left"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 left"></div>
+                <div class="block_effect6 left"></div>
+            </div>
+            <div class="block_right">
+                <div class="block_right_top">
+                    <div class="block_right_top_count seconds_two" >0</div>
+                </div>
+                <div class="block_middle_separator"></div>
+                <div class="block_right_bottom">
+                    <div class="block_right_bottom_count seconds_two" >0</div>
+                </div>
+                <div class="block_effect1"></div>
+                <div class="block_effect2"></div>
+                <div class="block_effect3"></div>
+                <div class="block_effect4"></div>
+                <div class="block_effect5 right"></div>
+                <div class="block_effect6 right"></div>
+            </div>
+            <div class="block_text">seconds</div>
+        </div>
     </div>
-    <div class=page_wp id=page_wp>
-      <div class="page page_1"><span class="page_bg scale_box"></span>
-        <div class=img_box><img src="" alt=""></div>
-        <div class="txt_box scale_box">
-          <h2>从现在开始，你就会感觉到它与以往是如此不同。</h2>
-          <p class=txt_brief></P>
+</div><!--/ft_counter -->
+<div style="clear: both;height: 100px;"></div>
+<div class="EightycloudsFlipTimer" style="width: 1000px" >
+    <h1 style="font-size: 36px; color: aliceblue;">距离<span style="font-size: 26px; color: aqua;">
+    <span class="yearclass">2020</span>
+    <span style="margin-left: -2px;">年</span>
+    <span style="margin-left: -2px;" class="monthclass">09</span>
+    <span>月</span>
+    <span class="dateclass">30</span>
+    <span>日&nbsp;交房还有</span>
+</span></h1>
+    
+    <div style="clear: both; height: 20px;"></div>
+    <div class="block days" style=" width: 320px; text-align: center;">
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_day1">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count Jfang_day1">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
         </div>
-      </div>
-      <div class="page page_2"><span class="page_bg scale_box"></span>
-        <div class=img_box><img src="" alt=""></div>
-        <div class="txt_box scale_box">
-          <h2>带你穿越时空,一切只源于我们对技术的无尽追求。</h2>
-          <p class=txt_brief></P>
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count  Jfang_day2">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count  Jfang_day2">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
         </div>
-      </div>
-      <div class="page page_3"><span class="page_bg scale_box"></span>
-        <div class=img_box><img src="" alt=""></div>
-        <div class="txt_box scale_box">
-          <h2>它以生动的方式呈现更多内容，就等你来探索</h2>
-			<p class=txt_brief></P>
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_day3">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count  Jfang_day3">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
         </div>
-      </div>
-      <div class="page page_4"><span class="page_bg scale_box"></span>
-        <div class=img_box><img src="" alt=""></div>
-        <div class="light_wp scale_box"><span class=light_box><i class=light_1></i> <i class=light_2></i> <i class=light_3></i> <i class=light_4></i> <i class=light_5></i></span></div>
-        <span class="meteor_box scale_box"></span>
-        <div class="txt_box scale_box">
-          <h2>这一切，都让你的生活更加精彩,即将呈现更多精彩</h2>
-          <p class=txt_brief></P>
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_day4">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count Jfang_day4">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
         </div>
-      </div>
+        <div class="block_text" style="width: 100%;">days</div>
     </div>
-    <div class="star_wp scale_box" id=star_wp><span class=star_bg></span> <span class=star_box></span></div>
-    <canvas id=canvas></canvas>    
-    <div class=btn_control id=btn_control><a href=javascript:; class=cur></a> <a href=javascript:;></a> <a href=javascript:;></a> <a href=javascript:;></a></div>
-    <div class=footer>
-      <div class=foot>   
-         </div>
+    <div class="block hours">
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_hour1">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count Jfang_hour1">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
+        </div>
+        <div class="block_right">
+            <div class="block_right_top">
+                <div class="block_right_top_count Jfang_hour2">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_right_bottom">
+                <div class="block_right_bottom_count Jfang_hour2">0</div>
+            </div>
+            <div class="block_effect1"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 right"></div>
+            <div class="block_effect6 right"></div>
+        </div>
+        <div class="block_text">hours</div>
     </div>
-  </div>
+    <div class="block minutes">
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_minute1">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count Jfang_minute1">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
+        </div>
+        <div class="block_right">
+            <div class="block_right_top">
+                <div class="block_right_top_count Jfang_minute2">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_right_bottom">
+                <div class="block_right_bottom_count Jfang_minute2">0</div>
+            </div>
+            <div class="block_effect1"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 right"></div>
+            <div class="block_effect6 right"></div>
+        </div>
+        <div class="block_text">minutes</div>
+    </div>
+    <div class="block seconds">
+        <div class="block_left">
+            <div class="block_left_top">
+                <div class="block_left_top_count Jfang_seconds1">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_left_bottom">
+                <div class="block_left_bottom_count Jfang_seconds1">0</div>
+            </div>
+            <div class="block_effect1 left"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 left"></div>
+            <div class="block_effect6 left"></div>
+        </div>
+        <div class="block_right">
+            <div class="block_right_top">
+                <div class="block_right_top_count Jfang_seconds2">0</div>
+            </div>
+            <div class="block_middle_separator"></div>
+            <div class="block_right_bottom">
+                <div class="block_right_bottom_count Jfang_seconds2">0</div>
+            </div>
+            <div class="block_effect1"></div>
+            <div class="block_effect2"></div>
+            <div class="block_effect3"></div>
+            <div class="block_effect4"></div>
+            <div class="block_effect5 right"></div>
+            <div class="block_effect6 right"></div>
+        </div>
+        <div class="block_text">seconds</div>
+    </div>
 </div>
-<script src="./js/vendors.js"></script>
-<script src="./js/index.js"></script>
-<!--[if IE 6]>
-<script type="text/javascript" src="http://static.webgame.kanimg.com/com/DD_PNG_min.js?v=1484553650649"></script>
-<script type="text/javascript">
-	var links=document.getElementsByTagName("a");
-	for(var i=0,l=links.length;i<l;i++){
-		links[i].setAttribute("hideFocus",true);
-	}
-</script>
-<![endif]-->
+
+</div><!--/ft_wrapper -->
+</div><!--/ft_bg -->
+
 </body>
 </html>
